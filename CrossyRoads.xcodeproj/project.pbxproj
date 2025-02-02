@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84C7C0CE2D478FAF00059BD5 /* CrossyRoadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C0CD2D478FAF00059BD5 /* CrossyRoadsApp.swift */; };
+		84C7C0D02D478FAF00059BD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C0CF2D478FAF00059BD5 /* ContentView.swift */; };
+		84C7C0D22D478FB100059BD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C7C0D12D478FB100059BD5 /* Assets.xcassets */; };
+		84C7C0D52D478FB100059BD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C7C0D42D478FB100059BD5 /* Preview Assets.xcassets */; };
+		84C7C0E02D478FF500059BD5 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C0DF2D478FF500059BD5 /* GameViewModel.swift */; };
+		84C7C0E92D47906100059BD5 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C0E82D47906100059BD5 /* GameView.swift */; };
+		84C7C0EF2D47B68A00059BD5 /* LaneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C0EE2D47B68A00059BD5 /* LaneNode.swift */; };
+		84C7C0F32D47B71300059BD5 /* GameViewSpriteKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C0F22D47B71300059BD5 /* GameViewSpriteKit.swift */; };
+		84C7C0F62D47B74200059BD5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C0F52D47B74200059BD5 /* GameScene.swift */; };
+		84C7C1BC2D4FA3BB00059BD5 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C1BB2D4FA3BB00059BD5 /* PlayerModel.swift */; };
+		84C7C1BF2D4FA78A00059BD5 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7C1BE2D4FA78A00059BD5 /* LeaderboardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84C7C0CA2D478FAF00059BD5 /* CrossyRoads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrossyRoads.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C7C0CD2D478FAF00059BD5 /* CrossyRoadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossyRoadsApp.swift; sourceTree = "<group>"; };
+		84C7C0CF2D478FAF00059BD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84C7C0D12D478FB100059BD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84C7C0D42D478FB100059BD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84C7C0DF2D478FF500059BD5 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		84C7C0E82D47906100059BD5 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		84C7C0EE2D47B68A00059BD5 /* LaneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaneNode.swift; sourceTree = "<group>"; };
+		84C7C0F22D47B71300059BD5 /* GameViewSpriteKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewSpriteKit.swift; sourceTree = "<group>"; };
+		84C7C0F52D47B74200059BD5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		84C7C1BB2D4FA3BB00059BD5 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		84C7C1BE2D4FA78A00059BD5 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84C7C0C72D478FAF00059BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84C7C0C12D478FAF00059BD5 = {
+			isa = PBXGroup;
+			children = (
+				84C7C0CC2D478FAF00059BD5 /* CrossyRoads */,
+				84C7C0CB2D478FAF00059BD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84C7C0CB2D478FAF00059BD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C0CA2D478FAF00059BD5 /* CrossyRoads.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C7C0CC2D478FAF00059BD5 /* CrossyRoads */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C0E12D47900200059BD5 /* Model */,
+				84C7C0DB2D478FBC00059BD5 /* Screens */,
+				84C7C0CD2D478FAF00059BD5 /* CrossyRoadsApp.swift */,
+				84C7C0CF2D478FAF00059BD5 /* ContentView.swift */,
+				84C7C0D12D478FB100059BD5 /* Assets.xcassets */,
+				84C7C0D32D478FB100059BD5 /* Preview Content */,
+			);
+			path = CrossyRoads;
+			sourceTree = "<group>";
+		};
+		84C7C0D32D478FB100059BD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C0D42D478FB100059BD5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84C7C0DB2D478FBC00059BD5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C1BD2D4FA6E800059BD5 /* LeaderboardView */,
+				84C7C0DC2D478FC300059BD5 /* GameScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		84C7C0DC2D478FC300059BD5 /* GameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C0F02D47B6ED00059BD5 /* AdditionalSpriteKit */,
+				84C7C0DE2D478FD500059BD5 /* View */,
+				84C7C0DD2D478FCD00059BD5 /* ViewModel */,
+			);
+			path = GameScreen;
+			sourceTree = "<group>";
+		};
+		84C7C0DD2D478FCD00059BD5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C0DF2D478FF500059BD5 /* GameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84C7C0DE2D478FD500059BD5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C0E82D47906100059BD5 /* GameView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84C7C0E12D47900200059BD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C1BA2D4FA3AC00059BD5 /* PlayerModel */,
+				84C7C0ED2D47B67900059BD5 /* LaneNode */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84C7C0ED2D47B67900059BD5 /* LaneNode */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C0EE2D47B68A00059BD5 /* LaneNode.swift */,
+			);
+			path = LaneNode;
+			sourceTree = "<group>";
+		};
+		84C7C0F02D47B6ED00059BD5 /* AdditionalSpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C0F42D47B71C00059BD5 /* GameScene */,
+				84C7C0F12D47B6FC00059BD5 /* PresentSpriteKitAtSwiftUI */,
+			);
+			path = AdditionalSpriteKit;
+			sourceTree = "<group>";
+		};
+		84C7C0F12D47B6FC00059BD5 /* PresentSpriteKitAtSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C0F22D47B71300059BD5 /* GameViewSpriteKit.swift */,
+			);
+			path = PresentSpriteKitAtSwiftUI;
+			sourceTree = "<group>";
+		};
+		84C7C0F42D47B71C00059BD5 /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C0F52D47B74200059BD5 /* GameScene.swift */,
+			);
+			path = GameScene;
+			sourceTree = "<group>";
+		};
+		84C7C1BA2D4FA3AC00059BD5 /* PlayerModel */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C1BB2D4FA3BB00059BD5 /* PlayerModel.swift */,
+			);
+			path = PlayerModel;
+			sourceTree = "<group>";
+		};
+		84C7C1BD2D4FA6E800059BD5 /* LeaderboardView */ = {
+			isa = PBXGroup;
+			children = (
+				84C7C1BE2D4FA78A00059BD5 /* LeaderboardView.swift */,
+			);
+			path = LeaderboardView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84C7C0C92D478FAF00059BD5 /* CrossyRoads */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C7C0D82D478FB100059BD5 /* Build configuration list for PBXNativeTarget "CrossyRoads" */;
+			buildPhases = (
+				84C7C0C62D478FAF00059BD5 /* Sources */,
+				84C7C0C72D478FAF00059BD5 /* Frameworks */,
+				84C7C0C82D478FAF00059BD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrossyRoads;
+			productName = CrossyRoads;
+			productReference = 84C7C0CA2D478FAF00059BD5 /* CrossyRoads.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84C7C0C22D478FAF00059BD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					84C7C0C92D478FAF00059BD5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 84C7C0C52D478FAF00059BD5 /* Build configuration list for PBXProject "CrossyRoads" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84C7C0C12D478FAF00059BD5;
+			productRefGroup = 84C7C0CB2D478FAF00059BD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84C7C0C92D478FAF00059BD5 /* CrossyRoads */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84C7C0C82D478FAF00059BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C7C0D52D478FB100059BD5 /* Preview Assets.xcassets in Resources */,
+				84C7C0D22D478FB100059BD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84C7C0C62D478FAF00059BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C7C0E02D478FF500059BD5 /* GameViewModel.swift in Sources */,
+				84C7C0D02D478FAF00059BD5 /* ContentView.swift in Sources */,
+				84C7C1BC2D4FA3BB00059BD5 /* PlayerModel.swift in Sources */,
+				84C7C0F62D47B74200059BD5 /* GameScene.swift in Sources */,
+				84C7C1BF2D4FA78A00059BD5 /* LeaderboardView.swift in Sources */,
+				84C7C0CE2D478FAF00059BD5 /* CrossyRoadsApp.swift in Sources */,
+				84C7C0E92D47906100059BD5 /* GameView.swift in Sources */,
+				84C7C0F32D47B71300059BD5 /* GameViewSpriteKit.swift in Sources */,
+				84C7C0EF2D47B68A00059BD5 /* LaneNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84C7C0D62D478FB100059BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84C7C0D72D478FB100059BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84C7C0D92D478FB100059BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CrossyRoads/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CrossyRoads;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84C7C0DA2D478FB100059BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CrossyRoads/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CrossyRoads;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84C7C0C52D478FAF00059BD5 /* Build configuration list for PBXProject "CrossyRoads" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C7C0D62D478FB100059BD5 /* Debug */,
+				84C7C0D72D478FB100059BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C7C0D82D478FB100059BD5 /* Build configuration list for PBXNativeTarget "CrossyRoads" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C7C0D92D478FB100059BD5 /* Debug */,
+				84C7C0DA2D478FB100059BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84C7C0C22D478FAF00059BD5 /* Project object */;
+}
