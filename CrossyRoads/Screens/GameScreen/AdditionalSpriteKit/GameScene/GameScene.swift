@@ -15,6 +15,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     private let laneCount = 90
     private let playerSpeed: CGFloat = 50
     var isGamePaused = false
+    var isColliding = false
     private var viewModel: GameViewModel?
     private var previousPlayerY: CGFloat = 0
     private var lastScoredLaneIndex: Int = 0
@@ -135,10 +136,23 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             player.run(moveAction, completion: { [weak self] in
                 guard let self = self else { return }
                 print("moved")
-                let currentLaneIndex = Int(self.player.position.y / self.laneHeight)
-                if currentLaneIndex > self.lastScoredLaneIndex && currentLaneIndex % 2 == 1 {
-                    self.viewModel?.score += 1
-                    self.lastScoredLaneIndex = currentLaneIndex
+//                let currentLaneIndex = Int(self.player.position.y / self.laneHeight)
+//                if currentLaneIndex > self.lastScoredLaneIndex && currentLaneIndex % 2 == 1 {
+//                    
+//                    self.lastScoredLaneIndex = currentLaneIndex
+//                }
+//                self.viewModel?.score += 1
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
+                    guard let self = self else { return }
+                    
+                    // If the player was not hit by a car, add score
+                    if !self.isColliding {
+                        self.viewModel?.score += 1
+                        print("Score: \(self.viewModel?.score ?? 0)")
+                    }
+                    
+                    // Reset collision flag
+                    self.isColliding = false
                 }
             })
             laneMove()
@@ -178,6 +192,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let bodyB = contact.bodyB.categoryBitMask
         
         if (bodyA == playerCategory && bodyB == carCategory) || (bodyA == carCategory && bodyB == playerCategory) {
+            isColliding = true
             handleGameOver()
         }
     }
@@ -209,6 +224,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // Reset Game
     func resetGame() {
         isGamePaused = false
+        isColliding = false
         self.isPaused = false
         physicsWorld.speed = 1
         viewModel?.resetScore()
